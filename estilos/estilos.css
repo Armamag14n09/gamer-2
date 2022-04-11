@@ -57,7 +57,7 @@
 }
 .foto{
     grid-area: nav;
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     transition: all 2s;
 }
 .foto:hover{
@@ -164,7 +164,7 @@
 }
 .foto{
     grid-area: nav;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
 }
 .parrafo3{
     grid-area: parrafo2;
