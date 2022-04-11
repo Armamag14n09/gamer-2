@@ -1,6 +1,6 @@
 
 .menu{
-    color: orange;
+    color: rgb(255, 72, 0);
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -19,7 +19,7 @@
 }
 .transition:hover{
     height: 25px;
-    background-color: aliceblue;
+    background-color: rgb(13, 36, 56);
 }
 
 .historia{
@@ -28,7 +28,7 @@
 .menu li{
     background-color: rgb(141, 199, 199);
     margin: 1px;
-    border-right: 15px black;
+    border-right: 15px rgb(0, 0, 0);
     display: inline-block;
     position: relative;
     padding: 10px 10px;
@@ -72,7 +72,7 @@
 }
 .form1 input:focus{
     width: 200px;
-    background-color: yellow;
+    background-color: rgb(255, 0, 21);
 }
 .form1 textarea{
     width: 200px;
@@ -81,7 +81,7 @@
 
 .form1 textarea:focus{
     width: 400px;
-    background-color: yellow;
+    background-color: rgb(173, 173, 113);
 }
 
 .iframe{
