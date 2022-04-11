@@ -1,0 +1,319 @@
+
+.menu{
+    color: orange;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-image:linear-gradient(rgb(220, 220, 231), rgb(217, 247, 217)) ;
+
+}
+.transition{
+    height: 15px;
+    /*transition: height 0s;*/
+}
+.transition:hover{
+    height: 25px;
+    background-color: aliceblue;
+}
+
+.historia{
+    background-image: radial-gradient(rgb(188, 247, 247), rgb(240, 211, 240));
+}
+.menu li{
+    background-color: rgb(141, 199, 199);
+    margin: 1px;
+    border-right: 15px black;
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px;
+ }
+.todo{
+    display: grid;
+    justify-items: stretch;
+    align-items: self-end;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+    grid-template-areas: 
+    "titulo titulo"
+    "nav nav2"
+    "parrafo1 parrafo"
+    "footer footer";
+     }
+.inicio{
+    grid-area: titulo;
+}
+.parte1{
+    grid-area: nav2;
+}
+.fondoFooter{
+    grid-area: footer;
+}
+.foto{
+    grid-area: nav;
+    filter: grayscale(100%);
+    transition: all 2s;
+}
+.foto:hover{
+    filter: none;
+    transform: scale(1.1);
+}
+
+.form1 input{
+    width: 110px;
+
+    transition: all 3s;
+}
+.form1 input:focus{
+    width: 200px;
+    background-color: yellow;
+}
+.form1 textarea{
+    width: 200px;
+    transition: all 3s;
+}
+
+.form1 textarea:focus{
+    width: 400px;
+    background-color: yellow;
+}
+
+.iframe{
+    animation-name: aparece;
+    animation-delay: 5s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes aparece{
+    0% {opacity: 100%;}
+    25%{opacity: 75%;}
+    50%{opacity: 50%;
+        width: 100%}
+       
+    75%{opacity: 25%;}
+    100%{opacity: 0%;}
+}
+
+.parrafo3{
+    grid-area: parrafo2;
+}
+.historia{
+    grid-area: parrafo1;
+    
+}
+
+@media screen and (min-width:768px) {
+    body{
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "nav nav2 ."
+        "parrafo1 parrafo"
+        "footer footer ."
+    }
+    .inicio{
+        grid-area: titulo;
+        background-color: blueviolet;
+    }
+    .parte1{
+        grid-area: nav2;
+        background-color: brown;
+    }
+    .fondoFooter{
+        grid-area: footer;
+        background-color: orange;
+    }
+    .foto{
+        grid-area: nav;
+    }
+    .parrafo3{
+        grid-area: parrafo2;
+    }
+    .main historia{
+        grid-area: parrafo1;
+    }
+}
+@media screen and (min-width:1200px){
+    body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    ". titulo titulo ."
+    ". nav nav2 ."
+    ". parrafo1 parrafo ."
+    "footer footer footer"
+}
+.inicio{
+    grid-area: titulo;
+    background-color: orange;
+}
+.parte1{
+    grid-area: nav2;
+    background-color: aqua
+}
+.fondoFooter{
+    grid-area: footer;
+    background-color: orange;
+}
+.foto{
+    grid-area: nav;
+    background-color: antiquewhite;
+}
+.parrafo3{
+    grid-area: parrafo2;
+}
+.main historia{
+    grid-area: parrafo1;
+}
+}
+
+.menu li a{
+    text-decoration: none;
+ }
+
+#colorIndex{
+    color: green
+}
+
+/*
+p{
+    color:rgb(0, 140, 255);
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}*/
+
+.parrafo2{
+    background-color: rgb(178, 178, 187);
+    color: rgb(12, 11, 12);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: right;
+    }
+
+.titulos{
+    color: violet;
+}
+.titulos2{
+    text-align: center;
+    color: red;
+    margin-right: 3px ;
+    padding: 1px ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+       }
+h3{
+    text-align: justify;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.submenu li{
+    display: block;
+    background-color: beige;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.fondoFooter{
+    background-color: aquamarine;
+    background-image: url(../imagenes/gifs-ejemplo.gif);
+    margin: 1px;
+    padding: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.fondoFooter{
+    font-family: 'Hurricane', cursive;
+}
+
+.historia__titulo{
+    color: rgb(250, 20, 20);
+    /*background-image:linear-gradient(aqua, purple))*/
+}
+
+
+.titulo__titulo2{
+    color: burlywood;
+}
+
+.titulo__titulo2--fondoVerde{
+    background-color: green;
+    margin: 15px;
+    padding: 10px;
+}
+
+.titulo{
+    width: 900px;
+    height: 1000px;
+      
+}
+.titulo .imagen{
+    width: 300px;
+    height: 250px;
+    margin: 15px auto;
+    padding: 10px;
+    display: block;
+
+}
+
+.imagen{
+    width: 90%;
+    height: 70%;
+    margin: 15px auto;
+    padding: 10px;
+    display: block;
+   
+}
+/*
+.parrafo2{
+   background-color: blue;
+    width: 500px;
+    height: 150px;
+    overflow: visible;
+    margin: 15px;
+    padding: 10px;
+}
+*/
+.imagen2{
+    margin-left: auto;
+    display: block;
+}
+
+.iframe{
+    width: 500px;
+    height: 150px;
+    margin-inline: auto;
+    display: block;
+}
