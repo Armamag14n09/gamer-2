@@ -15,7 +15,6 @@
 }
 .transition{
     height: 15px;
-    /*transition: height 0s;*/
 }
 .transition:hover{
     height: 25px;
@@ -72,7 +71,7 @@
 }
 .form1 input:focus{
     width: 200px;
-    background-color: rgb(255, 0, 21);
+    background-color: rgb(228, 182, 186);
 }
 .form1 textarea{
     width: 200px;
@@ -125,11 +124,11 @@
     }
     .parte1{
         grid-area: nav2;
-        background-color: brown;
+        background-color: rgb(182, 140, 140);
     }
     .fondoFooter{
         grid-area: footer;
-        background-color: orange;
+        background-color: rgb(187, 211, 130);
     }
     .foto{
         grid-area: nav;
@@ -164,7 +163,6 @@
 }
 .foto{
     grid-area: nav;
-    /*background-color: antiquewhite;*/
 }
 .parrafo3{
     grid-area: parrafo2;
@@ -182,13 +180,6 @@
     color: green
 }
 
-/*
-p{
-    color:rgb(0, 140, 255);
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-}*/
 
 .parrafo2{
     background-color: rgb(178, 178, 187);
@@ -204,7 +195,7 @@ p{
 }
 .titulos2{
     text-align: center;
-    color: red;
+    color: rgb(0, 68, 255);
     margin-right: 3px ;
     padding: 1px ;
 }
@@ -259,8 +250,7 @@ ul li a{
 }
 
 .historia__titulo{
-    color: rgb(250, 20, 20);
-    /*background-image:linear-gradient(aqua, purple))*/
+    color: rgb(43, 20, 250);
 }
 
 
@@ -296,16 +286,6 @@ ul li a{
     display: block;
    
 }
-/*
-.parrafo2{
-   background-color: blue;
-    width: 500px;
-    height: 150px;
-    overflow: visible;
-    margin: 15px;
-    padding: 10px;
-}
-*/
 .imagen2{
     margin-left: auto;
     display: block;
