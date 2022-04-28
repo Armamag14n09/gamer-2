@@ -1,3 +1,54 @@
 $colorPrincipal:rgb(25, 7, 107);
 $colorSecundario:rgb(157, 255, 0);
 
+$anchototal: 300px;
+
+.iframe{
+    width: $anchototal/2;
+}
+
+/*Mapa*/
+
+
+$redes: ( /*Declaramos nuestro mapa*/
+        twitter: #55acee,
+        facebook:  #3a5795,
+        send-mail: #C25E30,
+        instagram: violet,
+        whatsapp: green
+); 
+
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}
+
+
+$estilos: (
+  color: #3673D9,
+  centro: center,
+  tFuente: 35px,
+  1rem : 1rem
+);
+
+div {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, 1rem);
+  font-size:map-get($estilos, tFuente);
+}
+
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .box {
+    @include sizes(500px, 50px);
+ }
+ .boton{
+     @include sizes(10px, 250px)
+ }
+ 

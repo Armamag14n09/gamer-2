@@ -32,6 +32,11 @@
     position: relative;
     padding: 10px 10px;
  }
+
+ .boton{
+     text-align: right;
+ }
+ 
 .todo{
     display: grid;
     justify-items: stretch;
@@ -62,6 +67,9 @@
 .foto:hover{
     filter: none;
     transform: scale(1.1);
+}
+.form1{
+    text-align: center;
 }
 
 .form1 input{

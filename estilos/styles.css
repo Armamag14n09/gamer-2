@@ -1,3 +1,37 @@
+.iframe {
+  width: 150px; }
+
+/*Mapa*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--send-mail {
+  background-color: #C25E30; }
+
+.btn--instagram {
+  background-color: violet; }
+
+.btn--whatsapp {
+  background-color: green; }
+
+div {
+  background-color: #3673D9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px; }
+
+.box {
+  height: 50px;
+  width: 500px; }
+
+.boton {
+  height: 250px;
+  width: 10px; }
+
 .menu {
   color: #19076b;
   font-size: 16px;
