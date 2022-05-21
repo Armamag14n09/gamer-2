@@ -16,12 +16,34 @@
 .transition{
     height: 15px;
 }
+.titulo1 {
+    background-color: #ad3333;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    text-align: center;
+    height: 500px;
+    background-image: url("../imagenes/gamer9.jpg");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 10rem;
+  }
+.fondomenu {
+    height: 500px;
+    background-image: url("../imagenes/gamer9.jpg");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 10rem;
+  }
 .transition:hover{
     height: 25px;
     background-color: rgb(13, 36, 56);
 }
 .parrafo1{
     text-align: end;
+    text-align: center;
 }
 
 .historia{

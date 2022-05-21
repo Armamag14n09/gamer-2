@@ -19,7 +19,7 @@
   background-color: green; }
 
 div {
-  background-color: #3673D9;
+  /*background-color: #cad4e6;*/
   text-align: center;
   padding: 1rem;
   font-size: 35px; }
@@ -72,7 +72,10 @@ div {
   align-items: self-end;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "titulo titulo" "nav nav2" "parrafo1 parrafo" "footer footer"; }
+  grid-template-areas: "titulo titulo"
+ "nav nav2"
+ "parrafo1 parrafo"
+ "footer footer"; }
 
 .inicio {
   grid-area: titulo; }
@@ -83,7 +86,8 @@ div {
 .foto {
   grid-area: nav;
   filter: grayscale(50%);
-  transition: all 2s; }
+  transition: all 2s;
+text-align: center; }
   .foto:hover {
     filter: none;
     transform: scale(1.1); }
@@ -133,7 +137,10 @@ div {
   @media screen and (min-width: 768px) {
     .parrafo3 body {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "titulo titulo titulo" "nav nav2 ." "parrafo1 parrafo" "footer footer ."; }
+      grid-template-areas: "titulo titulo titulo"
+ "nav nav2 ."
+ "parrafo1 parrafo"
+ "footer footer ."; }
     .parrafo3 .inicio {
       grid-area: titulo;
       background-color: blueviolet; }
@@ -152,7 +159,10 @@ div {
   @media screen and (min-width: 1200px) {
     .parrafo3 body {
       grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: ". titulo titulo ." ". nav nav2 ." ". parrafo1 parrafo ." "footer footer footer"; }
+      grid-template-areas: ". titulo titulo ."
+ ". nav nav2 ."
+ ". parrafo1 parrafo ."
+ "footer footer footer"; }
     .parrafo3 .inicio {
       grid-area: titulo;
       background-color: orange; }
